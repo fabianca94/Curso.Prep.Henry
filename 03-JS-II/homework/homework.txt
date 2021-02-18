@@ -1,0 +1,22 @@
+El bucle for es una estructura de control en programación en la que se puede indicar de antemano el número máximo de iteraciones
+
+
+Variable de control: prácticamente un mandato impuesto por el uso habitual es utilizar la letra i Iterador como variable de control, o bien sus sucesoras en caso de bucles anidados. El uso de esta letra críptica quizás a primera vista es sin embargo una excelente forma de aportar agilidad de lectura al código por su uso tan extensivo. Como raras veces los bucles anidados superan las tres dimensiones (por una sencilla cuestión de explosión exponencial), las letras i, j y k suelen ser las únicas relacionadas con este uso. En C se define en el primer parámetro de la instrucción junto con la inicialización (opcional).
+
+Inicialización de la variable de control: en pseudolenguaje se pide explicitarlo (es la sección := ValorInicial), sin embargo, otros lenguajes más permisivos como C no lo requieren de forma obligatoria. De todos modos, la práctica de utilizar variables de control que no se inicializan en el bucle no es recomendada para la legibilidad del código. En C se define en el primer parámetro del bucle junto con la variable de control.
+
+Condición de control: en pseudolenguaje se ve representado por el valor final que puede tomar la variable de control (la sección A ValorFinal). En C es el segundo parámetro y puede ser cualquier condición (ni siquiera es obligación que esté la variable de control, aunque una vez más, esto no se considera una buena práctica).
+
+Incremento: en pseudolenguaje se toma por defecto el valor 1, aunque puede explicitarse por medio de la sentencia PASO = ValorPaso cualquier número entero (léase bien entero, o sea que técnicamente podemos decrementar). En C es el último parámetro.
+Cuerpo: es lo que se hará en cada iteración, pueden ser una o más instrucciones. En pseudolenguaje pesa la restricción de no poder alterar el valor de la variable de control; esto no es requerido en C, pero no se considera una buena práctica.
+
+El operador AND lógico ( && ) devuelve true si ambos operandos son true y, de false lo contrario, devuelve. Los operandos se convierten implícitamente al tipo bool antes de la evaluación y el resultado es de tipo bool . El operador AND lógico tiene asociatividad de izquierda a derecha.
+Los operandos del operador AND lógico no necesitan tener el mismo tipo, pero deben tener un tipo booleano, entero o puntero. Los operandos son normalmente expresiones relacionales o de igualdad.
+El primer operando se evalúa completamente y todos los efectos secundarios se completan antes de que continúe la evaluación de la expresión AND lógica.
+El segundo operando se evalúa solo si el primer operando se evalúa como true (distinto de cero). Esta evaluación elimina la evaluación innecesaria del segundo operando cuando la expresión lógica AND es false . Puede utilizar esta evaluación de cortocircuito para evitar la desreferencia de punteros null, como se muestra en el ejemplo siguiente:
+
+OR (||) lógico	expr1 || expr2	
+Regresa expr1 si tal puede convertirse a true; de lo contrario, regresa expr2. De esta forma, cuando se usa con valores Boolean, || regresa true si cualquier operando es verdadero; pero si ambos son falsos, regresa "false"
+
+NOT (!) lógico	!expr	
+Regresa false si su único operando puede convertirse a true; de lo contrario, regresa true.
