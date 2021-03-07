@@ -1,0 +1,1 @@
+Los arrays son objetos similares a una lista cuyo prototipo proporciona m�todos para efectuar operaciones de recorrido y de mutaci�n. Tanto la longitud como el tipo de los elementos de un array son variables.
